@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>【Situaciones】 きっぷうりば／レストランの階／ぎんこうの時間</title>
+<style>
+:root { --bg: #f7f8fa; --fg: #222; --muted: #4a5568; --border: #e6e8eb; --accent: #0b6cff; }
+@page { size: A4; margin: 18mm; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Meiryo", "Noto Sans JP", Arial, sans-serif; color: var(--fg); background: var(--bg); }
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+.header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 24px; }
+.title-wrap { display: flex; flex-direction: column; gap: 6px; }
+.subtitle { color: var(--accent); font-weight: 700; letter-spacing: 0.2px; }
+.title { font-size: 28px; line-height: 1.2; font-weight: 800; }
+.print-btn { appearance: none; border: 1px solid var(--border); background: #fff; color: var(--fg); padding: 10px 14px; border-radius: 10px; font-weight: 600; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; }
+.print-btn:focus { outline: 2px solid rgba(11,108,255,0.2); outline-offset: 2px; }
+.section { margin-bottom: 20px; }
+.card { background: #fff; border-radius: 14px; box-shadow: 0 8px 28px rgba(0,0,0,0.08); border: 1px solid var(--border); padding: 20px; }
+.section-title { font-size: 18px; color: var(--accent); font-weight: 800; margin-bottom: 12px; }
+.lead { font-size: 16px; }
+.muted { color: var(--muted); }
+.dialog { border: 1px dashed #e3e6ea; border-radius: 12px; padding: 12px; }
+.jp-line { font-size: 17px; font-weight: 600; margin: 6px 0; }
+.label { display: inline-block; min-width: 3em; color: #555; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.grid-split { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; align-items: start; }
+.blank { display: inline-block; border-bottom: 2px solid #222; min-width: 360px; padding-bottom: 4px; }
+.memo { min-height: 140px; border: 1px dashed #b8c0cc; border-radius: 12px; }
+.small { font-size: 13px; color: var(--muted); }
+.img-card img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border); }
+@media print { .print-btn { display: none; } body { background: #fff; } .card { box-shadow: none; border: 1px solid #dcdfe4; } .section { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="title-wrap">
+      <div class="subtitle">Situaciones</div>
+      <div class="title">きっぷうりば／レストランの階／ぎんこうの時間</div>
+    </div>
+    <button class="print-btn" onclick="window.print()">Imprimir PDF</button>
+  </div>
+
+  <section class="section card">
+    <div class="section-title">Diálogos</div>
+    <div class="grid-2">
+      <div class="dialog">
+        <div class="small">１ きっぷうりば</div>
+        <div class="jp-line"><span class="label">A:</span>すみません。きっぷうりばは　どこですか。</div>
+        <div class="jp-line"><span class="label">B:</span>あそこです。</div>
+        <div class="jp-line"><span class="label">A:</span>ああ、そうですか。ありがとうございます。</div>
+        <div class="jp-line"><span class="label">B:</span>どういたしまして。</div>
+      </div>
+      <div class="dialog">
+        <div class="small">２ レストランの階</div>
+        <div class="jp-line"><span class="label">A:</span>すみません。レストランは　なんがいですか。</div>
+        <div class="jp-line"><span class="label">B:</span>８かいです。</div>
+        <div class="jp-line"><span class="label">A:</span>ありがたおうございます。</div>
+        <div class="jp-line"><span class="label">B:</span>どういたしまして。</div>
+      </div>
+      <div class="dialog">
+        <div class="small">３ ぎんこうの時間</div>
+        <div class="jp-line"><span class="label">A:</span>ぎんこうは　なんじから　なんじまで　ですか。</div>
+        <div class="jp-line"><span class="label">B:</span>９じから　３じまで　です。</div>
+        <div class="jp-line"><span class="label">A:</span>９じから　３じまで　ですね。</div>
+        <div class="jp-line"><span class="label">B:</span>はい、そうです。</div>
+        <div class="jp-line"><span class="label">A:</span>どうも。</div>
+        <div class="jp-line"><span class="label">B:</span>いいえ。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <div class="section-title">Situación 1</div>
+    <p class="muted">Una persona pregunta dónde está la ventanilla de billetes.</p>
+    <div>
+      <div class="lead">Pregunta</div>
+      <p>Dices en español: 「¿Dónde está la ventanilla de billetes?」 → にほんごでなんですか。</p>
+      <p><span class="blank"></span></p>
+    </div>
+  </section>
+
+  <section class="section card">
+    <div class="section-title">Situación 2</div>
+    <p class="muted">Una persona pregunta en qué piso está el restaurante.</p>
+    <div>
+      <div class="lead">Pregunta</div>
+      <p>Dices en español: 「Está en el piso ocho。」 → にほんごでなんですか。</p>
+      <p><span class="blank"></span></p>
+    </div>
+  </section>
+
+  <section class="section card">
+    <div class="section-title">Situación 3</div>
+    <p class="muted">Preguntan el horario del banco.</p>
+    <div>
+      <div class="lead">Pregunta</div>
+      <p>Dices en español: 「Es de las nueve a las tres。」 → にほんごでなんですか。</p>
+      <p><span class="blank"></span></p>
+    </div>
+  </section>
+
+  <section class="section card">
+    <div class="section-title">Imagen de conversación</div>
+    <figure class="img-card">
+      <img src="https://raw.githubusercontent.com/dais79-lab/archivos_imagenes/a217aebf249674376d72d690c7c41b2c0e90ab9d/a4d69841-a26e-439b-8b27-cae9de9a4d3b-md.jpeg" alt="Horario del banco — imagen" />
+      <figcaption class="small">Horario del banco — imagen</figcaption>
+    </figure>
+  </section>
+
+  <section class="section card">
+    <div class="section-title">メモ欄</div>
+    <p>メモ：</p>
+    <div class="memo"></div>
+  </section>
+
+</div>
+</body>
+</html>
